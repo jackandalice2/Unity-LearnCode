@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
+[System.Serializable]
 public class Solider
 {
     public int exp;  //經驗值
@@ -14,6 +16,11 @@ public class Solider
     {
         exp = lv * 10;
         return exp;
+    }
+
+    internal string SetExp()
+    {
+        throw new NotImplementedException();
     }
 
     /// <summary>
